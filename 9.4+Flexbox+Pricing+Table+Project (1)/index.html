@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Comic+Relief:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        background-color: #0f5811;
+        font-family: "Comic Relief", serif;
+        font-weight: lighter;
+        font-style: normal;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+      }
+
+      .h11 {
+        color: #b9ff78;
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        text-align: center;
+      }
+
+      li {
+        list-style-type: none;
+        line-height: 2;
+      }
+
+      button {
+        background-color: #b9ff78;
+        border-radius: 7vh;
+        font-family: "Comic Relief";
+        font-size: 3.5vh;
+        text-align: center;
+        
+      }
+
+      .pricing-container {
+        padding-top: 7%;
+      }
+
+      .pricing-plan {
+        background-color: white;
+        border: whitesmoke;
+        border-radius: 5%;
+        padding: 10%;
+        margin: 0 10% 10%;
+        /*display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 0;
+        flex-basis: 100px;  */
+        text-align: center;
+        
+      }
+
+      .plan-title {
+        color: #ff431f;
+        font-family: "Anton", serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 7vh;
+        text-align: center;
+      }
+
+      .plan-features {
+        text-align: left;
+      }
+
+      .plan-price {
+        font-size: 3.5vh;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+     @media (min-width: 1000px) {
+        body {
+          display: flex;
+          flex-flow: row nowrap;
+        }
+      
+     }
+
+      @media (min-width: 100px) and (max-width: 300px) {
+        body {
+          flex-flow: column wrap;
+          justify-content: center;
+          align-items: center;
+
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="pricing-container">
+     <div class="h11">
+      <h1>A Plan for all your needs. (And your budget!)</h1>
+   </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Get Plan</button>
+      </div>
+        <div class="pricing-plan">  
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Get Plan</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Get Plan</button>
+      </div>
+    </div>
+  </body>
+</html>
